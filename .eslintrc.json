@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "./index.json",
+    "./fp.json",
+    "./react.json",
+    "./react-testing-library.json",
+    "./jest.json",
+    "./ts.json"
+  ],
+
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+
+  "rules": {
+    "import/no-unused-modules": [
+      "error",
+      { "missingExports": false, "unusedExports": true }
+    ]
+  },
+
+  "overrides": [
+    {
+      "files": ["./test.js"],
+
+      "extends": ["./node.json"]
+    },
+    {
+      "files": ["*.js"],
+
+      "extends": ["./ts-for-js.json"]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "extends": [
+    "plugin:import/react",
+    "plugin:react/all",
+    "plugin:react-hooks/recommended",
+    "plugin:react-perf/all",
+    "plugin:styled-components-a11y/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react-hook-form/recommended",
+    "plugin:react-form-fields/recommended",
+    "plugin:ssr-friendly/recommended",
+    "./prettier.json"
+  ],
+
+  "plugins": [
+    "import",
+    "@shopify",
+    "storybook",
+    "validate-jsx-nesting",
+    "sonar"
+  ],
+
+  "env": {
+    "browser": true
+  },
+
+  "rules": {
+    "react/jsx-filename-extension": [
+      "error",
+      { "extensions": [".jsx", ".tsx"] }
+    ],
+
+    "react/jsx-max-depth": ["error", { "max": 10 }],
+    "react/state-in-constructor": ["error", "never"],
+    "react/no-string-refs": ["error", { "noTemplateLiterals": true }],
+    "react/jsx-key": [
+      "error",
+      {
+        "checkFragmentShorthand": true,
+        "checkKeyMustBeforeSpread": true,
+        "warnOnDuplicates": true
+      }
+    ],
+    "react/forbid-prop-types": [
+      "error",
+      { "checkContextTypes": true, "checkChildContextTypes": true }
+    ],
+    "react/no-unsafe": ["error", { "checkAliases": true }],
+    "react/boolean-prop-naming": [
+      "error",
+      {
+        "rule": "^(is|has|are|can|should|did|will)[A-Z]([A-Za-z0-9])+",
+        "validateNested": true
+      }
+    ],
+    "react/require-default-props": [
+      "error",
+      { "forbidDefaultForRequired": true, "functions": "defaultArguments" }
+    ],
+    "react/jsx-no-target-blank": [
+      "error",
+      { "forms": true, "warnOnSpreadAttributes": true }
+    ],
+    "react/jsx-curly-brace-presence": [
+      "error",
+      { "propElementValues": "always" }
+    ],
+    "react/destructuring-assignment": [
+      "error",
+      "always",
+      { "destructureInSignature": "always" }
+    ],
+    "react/jsx-no-leaked-render": ["error", { "validStrategies": ["coerce"] }],
+    "react/display-name": ["error", { "checkContextObjects": true }],
+
+    "react-hooks/exhaustive-deps": "error",
+
+    "jsx-a11y/lang": "error",
+    "jsx-a11y/prefer-tag-over-role": "error",
+    "jsx-a11y/no-aria-hidden-on-focusable": "error",
+
+    "jsx-a11y/alt-text": ["error", { "img": ["Image", "Img"] }],
+
+    "@shopify/jsx-prefer-fragment-wrappers": "error",
+    "@shopify/react-hooks-strict-return": "error",
+    "@shopify/react-no-multiple-render-methods": "error",
+
+    "react-form-fields/styled-no-mix-controlled-with-uncontrolled": "error",
+    "react-form-fields/styled-no-only-value-prop": "error",
+
+    "validate-jsx-nesting/no-invalid-jsx-nesting": "error",
+
+    "sonar/no-hook-setter-in-body": "error",
+    "sonar/no-useless-react-setstate": "error",
+
+    "react/jsx-no-literals": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-sort-props": "off",
+    "react/sort-prop-types": "off",
+    "react/sort-default-props": "off"
+  },
+
+  "overrides": [
+    {
+      "files": ["*.jsx"]
+    },
+
+    {
+      "files": [
+        "*.stories.@(ts|tsx|js|jsx|mjs|cjs|mts|cts)",
+        "*.story.@(ts|tsx|js|jsx|mjs|cjs|mts|cts)"
+      ],
+      "rules": {
+        "import/no-anonymous-default-export": "off",
+        "storybook/await-interactions": "error",
+        "storybook/context-in-play-function": "error",
+        "storybook/csf-component": "error",
+        "storybook/default-exports": "error",
+        "storybook/hierarchy-separator": "error",
+        "storybook/meta-inline-properties": "error",
+        "storybook/no-redundant-story-name": "error",
+        "storybook/no-stories-of": "error",
+        "storybook/no-title-property-in-meta": "error",
+        "storybook/prefer-pascal-case": "error",
+        "storybook/story-exports": "error",
+        "storybook/use-storybook-expect": "error",
+        "storybook/use-storybook-testing-library": "error"
+      }
+    },
+    {
+      "files": [".storybook/main.@(js|cjs|mjs|ts|cts|mts)"],
+      "rules": {
+        "storybook/no-uninstalled-addons": "error"
+      }
+    },
+
+    {
+      "files": [
+        "**/test/**",
+        "**/tests/**",
+        "**/spec/**",
+        "**/__tests__/**",
+        "*.test.*",
+        "*.spec.*",
+        "*.e2e.*",
+        "*.e2e-spec.*"
+      ],
+
+      "rules": {
+        "react-perf/jsx-no-new-object-as-prop": "off",
+        "react-perf/jsx-no-new-array-as-prop": "off",
+        "react-perf/jsx-no-new-function-as-prop": "off",
+        "react-perf/jsx-no-jsx-as-prop": "off"
+      }
+    }
+  ],
+
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "jsx-a11y": {
+      "components": {
+        "Image": "img",
+        "Img": "img"
+      }
+    }
+  }
+}

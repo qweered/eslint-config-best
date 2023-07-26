@@ -1,0 +1,212 @@
+{
+  "parser": "@typescript-eslint/parser",
+
+  "plugins": [
+    "@typescript-eslint",
+    "sort-class-members",
+    "decorator-position",
+    "@shopify",
+    "etc"
+  ],
+
+  "rules": {
+    "require-await": "off",
+    "@typescript-eslint/require-await": "error",
+
+    "no-return-await": "off",
+    "@typescript-eslint/return-await": ["error", "always"],
+
+    "no-throw-literal": "off",
+    "@typescript-eslint/no-throw-literal": "error",
+
+    "no-void": ["error", { "allowAsStatement": true }],
+    "@typescript-eslint/no-floating-promises": "error",
+
+    "@typescript-eslint/await-thenable": "error",
+    "@typescript-eslint/ban-ts-comment": "error",
+    "@typescript-eslint/ban-tslint-comment": "error",
+    "@typescript-eslint/no-base-to-string": "error",
+    "@typescript-eslint/no-dynamic-delete": "error",
+    "@typescript-eslint/no-extraneous-class": "error",
+    "@typescript-eslint/no-for-in-array": "error",
+    "@typescript-eslint/no-implied-eval": "error",
+    "@typescript-eslint/no-misused-new": "error",
+    "@typescript-eslint/no-misused-promises": "error",
+    "@typescript-eslint/no-this-alias": "error",
+    "@typescript-eslint/prefer-for-of": "error",
+    "@typescript-eslint/prefer-includes": "error",
+    "@typescript-eslint/prefer-optional-chain": "error",
+    "@typescript-eslint/prefer-string-starts-ends-with": "error",
+    "@typescript-eslint/promise-function-async": "error",
+    "@typescript-eslint/require-array-sort-compare": "error",
+    "@typescript-eslint/unbound-method": "error",
+    "@typescript-eslint/no-confusing-void-expression": "error",
+    "@typescript-eslint/no-useless-empty-export": "error",
+
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
+      "error",
+      { "allowComparingNullableBooleansToTrue": false }
+    ],
+
+    "@typescript-eslint/restrict-template-expressions": [
+      "error",
+      {
+        "allowNumber": true,
+        "allowAny": true
+      }
+    ],
+
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "default",
+        "format": ["strictCamelCase"]
+      },
+      {
+        "selector": "function",
+        "format": ["strictCamelCase", "StrictPascalCase"]
+      },
+      {
+        "selector": ["typeLike", "enumMember"],
+        "format": ["StrictPascalCase"]
+      },
+      {
+        "selector": ["variable", "parameter", "accessor"],
+        "types": ["boolean"],
+        "format": ["PascalCase"],
+        "prefix": ["is", "has", "are", "can", "should", "did", "will"]
+      },
+      {
+        "selector": ["objectLiteralProperty"],
+        "format": null,
+        "modifiers": ["requiresQuotes"]
+      },
+      {
+        "selector": ["property"],
+        "types": ["boolean"],
+        "format": ["PascalCase"],
+        "prefix": ["is", "has", "are", "can", "should", "did", "will"],
+        "filter": {
+          "regex": "^(allowfullscreen|allowFullScreen|async|autofocus|autoFocus|autoplay|autoPlay|checked|defaultChecked|contenteditable|contentEditable|controls|default|defer|disabled|draggable|formnovalidate|formNoValidate|hidden|inert|ismap|itemscope|itemScope|loop|multiple|muted|nomodule|noModule|novalidate|noValidate|open|playsinline|playsInline|readonly|readOnly|required|reversed|selected|spellcheck|spellCheck)$",
+          "match": false
+        }
+      }
+    ],
+
+    "sort-class-members/sort-class-members": [
+      "error",
+      {
+        "groups": {
+          "static-arrow-function-properties": [
+            {
+              "static": true,
+              "propertyType": "ArrowFunctionExpression",
+              "sort": "alphabetical"
+            }
+          ],
+          "static-async-methods": [
+            {
+              "static": true,
+              "type": "method",
+              "async": true,
+              "sort": "alphabetical"
+            }
+          ],
+          "static-accessor-pairs": [
+            { "static": true, "accessorPair": true, "sort": "alphabetical" }
+          ],
+          "static-getters": [
+            { "static": true, "kind": "get", "sort": "alphabetical" }
+          ],
+          "static-setters": [
+            { "static": true, "kind": "set", "sort": "alphabetical" }
+          ],
+          "static-conventional-private-properties": [
+            {
+              "static": true,
+              "type": "property",
+              "name": "/_.+/",
+              "sort": "alphabetical"
+            }
+          ],
+          "static-conventional-private-methods": [
+            {
+              "static": true,
+              "type": "method",
+              "name": "/_.+/",
+              "sort": "alphabetical"
+            }
+          ],
+          "static-async-conventional-private-methods": [
+            {
+              "static": true,
+              "type": "method",
+              "name": "/_.+/",
+              "async": true,
+              "sort": "alphabetical"
+            }
+          ],
+          "async-conventional-private-methods": [
+            {
+              "type": "method",
+              "name": "/_.+/",
+              "async": true,
+              "sort": "alphabetical"
+            }
+          ]
+        },
+        "order": [
+          "[static-properties]",
+          "[static-arrow-function-properties]",
+          "[static-accessor-pairs]",
+          "[static-getters]",
+          "[static-setters]",
+          "[static-methods]",
+          "[static-async-methods]",
+          "[properties]",
+          "[arrow-function-properties]",
+          "constructor",
+          "[accessor-pairs]",
+          "[getters]",
+          "[setters]",
+          "[methods]",
+          "[async-methods]",
+          "[static-conventional-private-properties]",
+          "[static-conventional-private-methods]",
+          "[static-async-conventional-private-methods]",
+          "[conventional-private-properties]",
+          "[conventional-private-methods]",
+          "[async-conventional-private-methods]"
+        ],
+        "accessorPairPositioning": "getThenSet"
+      }
+    ],
+
+    "decorator-position/decorator-position": "error",
+
+    "@shopify/prefer-class-properties": "error",
+    "@shopify/no-fully-static-classes": "error",
+
+    "etc/no-assign-mutated-array": "error",
+    "etc/no-commented-out-code": "error",
+    "etc/no-internal": "error",
+
+    "import/no-deprecated": "off",
+    "etc/no-deprecated": "error",
+
+    "sonar/argument-type": "off",
+    "sonar/no-associative-arrays": "off",
+    "sonar/no-invalid-await": "off",
+    "sonar/operation-returning-nan": "off",
+    "sonar/values-not-convertible-to-numbers": "off",
+    "sonar/class-prototype": "off",
+    "sonar/no-for-in-iterable": "off",
+    "sonar/non-number-in-arithmetic-expression": "off",
+    "sonar/null-dereference": "off",
+    "sonar/in-operator-type-error": "off",
+    "sonar/no-incorrect-string-concat": "off",
+    "sonar/no-misleading-array-reverse": "off",
+
+    "react/sort-comp": "off"
+  }
+}
