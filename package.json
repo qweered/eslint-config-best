@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-best",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "The most strict (yet practical) ESLint config",
   "main": "index.json",
   "scripts": {
@@ -17,7 +17,6 @@
     "config",
     "eslintconfig",
     "eslint-config",
-    "hardcore",
     "best",
     "fp",
     "functional"
