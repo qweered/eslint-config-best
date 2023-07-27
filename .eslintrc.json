@@ -3,8 +3,6 @@
     "./index.json",
     "./fp.json",
     "./react.json",
-    "./react-testing-library.json",
-    "./jest.json",
     "./ts.json"
   ],
 
@@ -20,11 +18,6 @@
   },
 
   "overrides": [
-    {
-      "files": ["./test.js"],
-
-      "extends": ["./node.json"]
-    },
     {
       "files": ["*.js"],
 

@@ -52,7 +52,10 @@
       "error",
       {
         "allowNumber": true,
-        "allowAny": true
+        "allowAny": true,
+        "allowBoolean": false,
+        "allowNullish": false,
+        "allowRegExp": false
       }
     ],
 
