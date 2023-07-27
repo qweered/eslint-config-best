@@ -20,5 +20,3 @@ require("./react.json");
 require("./tsconfig.json");
 require("./disabled-rules.json");
 require("./rules-disabled-by-prettier.json");
-
-// help
