@@ -4,7 +4,7 @@
   "description": "The most strict (yet practical) ESLint config",
   "main": "index.json",
   "scripts": {
-    "test": "eslint .",
+    "test": "node ./test.js && eslint .",
     "preversion": "pnpm test",
     "postversion": "git push && pnpm publish"
   },
