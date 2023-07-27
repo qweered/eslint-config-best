@@ -1,5 +1,22 @@
-// eslint-disable-next-line import/unambiguous,strict,unicorn/prefer-module
+/* eslint-env node */
+
+/*
+  eslint-disable
+  unicorn/prefer-module,
+  putout/putout,
+  import/max-dependencies
+*/
+
 "use strict";
 
-// eslint-disable-next-line no-console
-console.log("success");
+require("./base.json");
+require("./prettier.json");
+require("./index.json");
+require("./fp.json");
+require("./node.json");
+require("./ts-for-js.json");
+require("./ts.json");
+require("./react.json");
+require("./tsconfig.json");
+require("./disabled-rules.json");
+require("./rules-disabled-by-prettier.json");

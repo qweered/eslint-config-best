@@ -5,23 +5,34 @@
     "./react.json",
     "./ts.json"
   ],
-
   "parserOptions": {
     "project": "./tsconfig.json"
   },
-
   "rules": {
     "import/no-unused-modules": [
       "error",
-      { "missingExports": false, "unusedExports": true }
+      {
+        "missingExports": false,
+        "unusedExports": true
+      }
     ]
   },
-
   "overrides": [
     {
-      "files": ["*.js"],
-
-      "extends": ["./ts-for-js.json"]
+      "files": [
+        "./test.js"
+      ],
+      "extends": [
+        "./node.json"
+      ]
+    },
+    {
+      "files": [
+        "*.js"
+      ],
+      "extends": [
+        "./ts-for-js.json"
+      ]
     }
   ]
 }
