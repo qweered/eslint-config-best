@@ -5,11 +5,6 @@
     "config:base",
     "schedule:weekly",
     "group:allNonMajor",
-    ":dependencyDashboard",
-    ":semanticPrefixFixDepsChoreOthers",
-    ":ignoreModulesAndTests",
-    "replacements:all",
-    "workarounds:all"
   ],
   "rangeStrategy": "bump"
 }
