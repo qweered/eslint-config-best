@@ -27,15 +27,6 @@
     "url": "https://github.com/qweered/eslint-config-best/issues"
   },
   "homepage": "https://github.com/qweered/eslint-config-best",
-  "peerDependencies": {
-    "eslint": "^8.45.0",
-    "typescript": ">=4.9.5"
-  },
-  "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    }
-  },
   "dependencies": {
     "@html-eslint/eslint-plugin": "^0.19.1",
     "@html-eslint/parser": "^0.19.1",
