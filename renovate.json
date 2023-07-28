@@ -4,7 +4,7 @@
   "extends": [
     "config:recommended",
     "schedule:weekly",
-    "group:allNonMajor",
+    "group:allNonMajor"
   ],
   "rangeStrategy": "bump"
 }
