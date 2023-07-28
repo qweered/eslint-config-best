@@ -2,15 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "configMigration": true,
   "extends": [
-    "extends": [
     "config:base",
     "schedule:weekly",
     "group:allNonMajor",
-    ":dependencyDashboard",
+    ":dependencyDashboard"
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
     "replacements:all",
-    "workarounds:all"],
-  ]
-  "rangeStrategy": "bump",
+    "workarounds:all"
+  ],
+  "rangeStrategy": "bump"
 }
