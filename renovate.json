@@ -5,6 +5,5 @@
     "config:recommended",
     "schedule:weekly",
     "group:allNonMajor"
-  ],
-  "rangeStrategy": "bump"
+  ]
 }
