@@ -158,10 +158,10 @@ dependencies:
 
 devDependencies:
   eslint:
-    specifier: ^8.45.0
+    specifier: 8.45.0
     version: 8.45.0
   typescript:
-    specifier: ^5.1.6
+    specifier: 5.1.6
     version: 5.1.6
 
 packages:
