@@ -5,7 +5,7 @@
     "config:base",
     "schedule:weekly",
     "group:allNonMajor",
-    ":dependencyDashboard"
+    ":dependencyDashboard",
     ":semanticPrefixFixDepsChoreOthers",
     ":ignoreModulesAndTests",
     "replacements:all",
