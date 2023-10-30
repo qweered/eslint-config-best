@@ -15,8 +15,8 @@ dependencies:
     specifier: ^0.2.0
     version: 0.2.0(eslint@8.45.0)
   '@putout/plugin-apply-shorthand-properties':
-    specifier: ^3.0.2
-    version: 3.0.2(putout@30.7.0)
+    specifier: ^5.0.0
+    version: 5.1.1(putout@30.7.0)
   '@shopify/eslint-plugin':
     specifier: ^42.1.0
     version: 42.1.0(@babel/core@7.22.9)(eslint-import-resolver-typescript@3.5.5)(eslint@8.45.0)(prettier@3.0.0)(typescript@5.1.6)
@@ -1060,11 +1060,11 @@ packages:
       putout: 30.7.0
     dev: false
 
-  /@putout/plugin-apply-shorthand-properties@3.0.2(putout@30.7.0):
-    resolution: {integrity: sha512-na1VJeWbdzdIoZxmqzxcd3dOk9+0POATa83DEOLALB7kcCWuLJOpRE6/5WpcXEQRhK+hVHG6StnfN9BR3KMYcQ==}
-    engines: {node: '>=8.3.0'}
+  /@putout/plugin-apply-shorthand-properties@5.1.1(putout@30.7.0):
+    resolution: {integrity: sha512-JvXj5hzlHNTmDNY5TW36EG6pCIeNJAoph85JLZz5drpN2ky+7mssFDpT64rCufxVdKL81OURhQSzrAHuIikKQw==}
+    engines: {node: '>=16'}
     peerDependencies:
-      putout: '>=7.17'
+      putout: '>=32'
     dependencies:
       putout: 30.7.0
     dev: false
