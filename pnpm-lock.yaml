@@ -36,8 +36,8 @@ dependencies:
     specifier: ^3.5.5
     version: 3.5.5(@typescript-eslint/parser@6.2.0)(eslint-plugin-import@2.28.0)(eslint@8.45.0)
   eslint-plugin-array-func:
-    specifier: ^3.1.8
-    version: 3.1.8(eslint@8.45.0)
+    specifier: ^4.0.0
+    version: 4.0.0(eslint@8.45.0)
   eslint-plugin-decorator-position:
     specifier: ^5.0.2
     version: 5.0.2(@babel/eslint-parser@7.22.9)(eslint@8.45.0)
@@ -3301,11 +3301,11 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-plugin-array-func@3.1.8(eslint@8.45.0):
-    resolution: {integrity: sha512-BjnbJvw+knaHgVddIL3q5xYcoqAZoK8wOdT7QF+mkvSAjXdZCdhL0z71Y7oRtgXA8BpN9QLJ2uHgD3I6ymlbOw==}
-    engines: {node: '>= 6.8.0'}
+  /eslint-plugin-array-func@4.0.0(eslint@8.45.0):
+    resolution: {integrity: sha512-p3NY2idNIvgmQLF2/62ZskYt8gOuUgQ51smRc3Lh7FtSozpNc2sg+lniz9VaCagLZHEZTl8qGJKqE7xy8O/D/g==}
+    engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
-      eslint: '>=3.0.0'
+      eslint: '>=8.40.0'
     dependencies:
       eslint: 8.45.0
     dev: false
