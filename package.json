@@ -77,7 +77,7 @@
     "eslint-plugin-unused-imports": "^3.0.0",
     "eslint-plugin-validate-jsx-nesting": "^0.1.1",
     "prettier": "^3.0.0",
-    "putout": "^30.7.0"
+    "putout": "^33.0.0"
   },
   "files": [
     "base.json",
