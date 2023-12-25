@@ -114,8 +114,8 @@ dependencies:
     specifier: ^1.15.0
     version: 1.15.0(eslint@8.45.0)
   eslint-plugin-security:
-    specifier: ^1.7.1
-    version: 1.7.1
+    specifier: ^2.0.0
+    version: 2.1.0
   eslint-plugin-simple-import-sort:
     specifier: ^10.0.0
     version: 10.0.0(eslint@8.45.0)
@@ -3824,8 +3824,8 @@ packages:
       safe-regex: 1.1.0
     dev: false
 
-  /eslint-plugin-security@1.7.1:
-    resolution: {integrity: sha512-sMStceig8AFglhhT2LqlU5r+/fn9OwsA72O5bBuQVTssPCdQAOQzL+oMn/ZcpeUY6KcNfLJArgcrsSULNjYYdQ==}
+  /eslint-plugin-security@2.1.0:
+    resolution: {integrity: sha512-ywxclP954bf8d3gr6KOQ/AFc+PRvWuhOxtPOEtiHmVYiZr/mcgQtmSJq6+hTEXC5ylTjHnPPG+PEnzlDiWMXbQ==}
     dependencies:
       safe-regex: 2.1.1
     dev: false
