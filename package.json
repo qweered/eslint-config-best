@@ -70,7 +70,7 @@
     "eslint-plugin-sonarjs": "^0.19.0",
     "eslint-plugin-sort-class-members": "^1.18.0",
     "eslint-plugin-ssr-friendly": "^1.2.0",
-    "eslint-plugin-storybook": "^0.6.13",
+    "eslint-plugin-storybook": "^0.11.1",
     "eslint-plugin-styled-components-a11y": "^2.1.31",
     "eslint-plugin-total-functions": "^7.0.7",
     "eslint-plugin-unicorn": "^48.0.1",
